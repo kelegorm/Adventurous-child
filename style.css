@@ -9,3 +9,8 @@ Version:        0.1.0
 */
 
 @import url("../adventurous/style.css");
+
+h1.page-title {
+  font-size: x-large;
+  color: #222;
+}
