@@ -31,7 +31,7 @@ $moretag = $options[ 'more_tag_text' ];
 			<?php
             $images = get_children( array( 'post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'numberposts' => 999 ) );
 			
-            if ( $images && ( is_home() || is_front_page() || is_archive()) ) :
+            if ( $images && ( is_home() || is_front_page() || is_archive()) && ('' == get_the_post_thumbnail()) ) :
 			
                 $total_images = count( $images );
                 $image = array_shift( $images );
