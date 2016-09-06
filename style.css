@@ -14,3 +14,7 @@ h1.page-title {
   font-size: x-large;
   color: #222;
 }
+
+ul.out-links li a img {
+  margin-right: 0.5em;
+}
